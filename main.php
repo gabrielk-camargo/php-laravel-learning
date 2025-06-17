@@ -1,9 +1,11 @@
 <?php
 
-echo  "Bem vindo(a) ao screen match";
+echo  "Bem vindo(a) ao screen match \n";
 
-$nameFilme = "Top Gun - Maverick";
+$nameFilme = "Top Gun - Maverick ";
 $yearOfRelease = 2022;
-$filmeReview = 8.8;
+$sumNotes = (3 + 3 + 9 + 2 + 2);
+$filmeReview = $sumNotes/5 ;
 $includedInIhePlan = true;
 
+echo "Essa é review do filme " . $filmeReview;
