@@ -7,5 +7,12 @@ $yearOfRelease = $argv[2] ?? "Não Consta";
 $sumNotes = (3 + 3 + 9 + 2 + 2);
 $filmeReview = $sumNotes/5 ;
 $includedInIhePlan = true;
+$classFilme = match ($nameFilme){
+    "Thor" => "Aventura",
+    "Interestelar" => "Ficção",
+    "Supernatural" => "Terror",
+    default => "Não consta"
+};
 
-echo "O nome do filme é " . $nameFilme . "\n" . "O ano de lançamento é " . $yearOfRelease . "\n" . "E sua avalição é " . $filmeReview;
+
+echo "O nome do filme é " . $nameFilme . "\n" . "O ano de lançamento é " . $yearOfRelease . "\n" . "Sua avalição é " . $filmeReview . "\n" . "Gênero do filme é " . $classFilme;
